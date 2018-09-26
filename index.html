@@ -5,6 +5,28 @@
 <meta charset="utf-8">
 <title>嘛人导航</title>
 <link rel="shortcut icon" href="./img/favicon.png" >
+<script type="text/javascript">
+//===========================点击展开关闭效果====================================
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = shutTip; 
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = openTip; 
+   }
+}
+}
+</script>
+
 </head>
 
 
@@ -24,6 +46,13 @@
             <div id="me" style="width: 100%; height: 100%;overflow: hidden;padding:20px 0 0 0;font-weight:bold;color:#FF00AA;font-size:20px;text-shadow:1px 0 1px #FFFFFF,0 0 5px #FFFFFF,0 -1px 10px #FFFFFF,-1px 0 5px #FFFFFF;letter-spacing:3px">|=-=|<a style="color:#000000;" href="https://jq.qq.com/?_wv=1027&k=5A6aJfa" target="_blank">咸鱼交流群</a>|=-=|</div>
 			
         </div>
+
+				<div id="test" align="center">
+			<button onclick="openShutManager(this,'box4',false,'点击关闭','点击展开')">点击偷窥</button>
+				<p id="box4" style="display:none">
+					<iframe src="http://62mr49t.hk1.mofasuidao.cn/" height="720" width="1280" frameborder="0" scrolling="0"></iframe>
+				</p>
+		</div>
 
 		<div align="center" style="padding:10px 0 5px 0">
 			<img src="https://tool.lu/netcard/">
