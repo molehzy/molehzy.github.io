@@ -1,4 +1,4 @@
-# https://www.molehzy.xyz/
+# https://molehzy.tk/
 这里是嘛人的GitHub空间
 
 这个项目主要做图床
