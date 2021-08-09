@@ -1,0 +1,14 @@
+[
+{
+	"Download": "https://molehzy.lanzoui.com/b026coe7g",
+	"PWD": "mrdgj"
+},
+{
+	"Ver": "1.0",
+	"Log": "第一个版本"
+},
+{
+	"Ver": "1.1",
+	"Log": "修复BASS初始化问题"
+}
+]
