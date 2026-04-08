@@ -1,31 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
-	<meta charset="utf-8">
-	<title>嘛人导航</title>
-	<link rel="shortcut icon" href="./img/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘛人导航</title>
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <style>
+        body {
+        	margin: 0;
+        	padding: 0;
+        	background-image: url('./img/BG.jpg');
+        	background-size: cover;
+        	background-position: center;
+        	background-attachment: fixed;
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	min-height: 100vh;
+        }
+        
+        .section {
+        	margin: 50px 0 0 0;
+        	width: 70vw;
+        	text-align: center;
+        	border-radius: 10px;
+        	background-color: rgba(0, 0, 0, 0.3);
+        	backdrop-filter: blur(5px);
+        	box-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 0 0 5px #000, 0 0 10px #000;
+        	border-bottom: 10px solid rgba(255, 255, 255, 0.4);
+        }
+        .section:last-child {
+        	margin-bottom: 20px;
+        }
+        
+        .section-title {
+        	margin: 10px 0 0 0;
+        	color: #FF00AA;
+        	font-size: 32px;
+        	font-weight: bold;
+        	letter-spacing: 5px;
+        	text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 10px #000;
+        }
+        
+        .links-container {
+        	margin: 10px 20px 20px 20px;
+        	display: flex;
+        	flex-wrap: wrap;
+        	justify-content: center;
+        	gap: 20px;
+        }
+        
+        .links-container a {
+        	display: inline-block;
+        	padding: 10px 30px;
+        	background-color: rgba(255, 255, 255, 0.5);
+        	color: #0066FF;
+        	font-weight: bold;
+        	font-size: 24px;
+        	text-decoration: none;
+        	border-radius: 10px;
+        	transition: all 0.5s;
+        	letter-spacing: 2px;
+        	text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 10px #000;
+        }
+        
+        .links-container a:hover {
+        	background-color: #0066FF;
+        	color: #FFFFFFAA;
+        	transition: all 0.5s;
+        	text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 10px #000;
+        }
+        
+        .bg-source {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            font-size: 10px;
+            color: rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            z-index: 999;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+            transition: color 0.3s ease;
+        }
+        
+        .bg-source:hover {
+            color: #0066FF;
+            text-decoration: underline;
+        }
+        .analytics-container {
+        	text-align: center;
+        	margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
-	<div style="border-radius:20px;background-position: 45% 40%;background-image:url(./img/BG.jpg);width:100%;height:50%">
-		<div align="center" style="padding:10px 0 15px 0">
-			<div style="margin-left: -50%;font-weight:bold;color:#0066FF;font-size:28px;text-shadow:1px 0 1px #FFFFFF,0 0 5px #FFFFFF,0 -1px 10px #FFFFFF,-1px 0 5px #FFFFFF;letter-spacing:3px"><a style="color:#0066FF;" href="./#link" target="_self">相关链接</a></div>
-			<div style="margin-top: -36px;font-weight:bold;color:#0066FF;font-size:28px;text-shadow:1px 0 1px #FFFFFF,0 0 5px #FFFFFF,0 -1px 10px #FFFFFF,-1px 0 5px #FFFFFF;letter-spacing:3px"><a style="color:#0066FF;" href="./#download" target="_self">资源存放</a></div>
-			<div style="margin-left: 50%;margin-top: -35px;font-weight:bold;color:#0066FF;font-size:28px;text-shadow:1px 0 1px #FFFFFF,0 0 5px #FFFFFF,0 -1px 10px #FFFFFF,-1px 0 5px #FFFFFF;letter-spacing:3px"><a style="color:#0066FF;" href="./#me" target="_self">联系我</a></div>
-		</div>
-		
-		<div align="center" style="margin: auto;width: 95%;height: 80px;overflow: hidden;border-bottom: 6px solid rgba(255,255,255,.50);border-radius:10px;background-color:rgba(255,255,255,.35)">
-			<div id="link" style="width: 100%; height: 100%;overflow: hidden;padding:20px 0 0 0;font-weight:bold;color:#FF00AA;font-size:20px;text-shadow:1px 0 1px #FFFFFF,0 0 5px #FFFFFF,0 -1px 10px #FFFFFF,-1px 0 5px #FFFFFF;letter-spacing:3px">|=-=|<a style="color:#000000;" href="https://space.bilibili.com/5407039/" target="_blank">BILIBILI</a>|=-=|<a style="color:#000000;" href="http://www.missevan.com/325445/" target="_blank">MISSEVAN</a>|=-=|<a style="color:#000000;" href="http://5sing.kugou.com/54727720/default.html" target="_blank">5Sing</a>|=-=|<a style="color:#000000;" href="https://github.com/molehzy/molehzy.github.io" target="_blank">GITHUB</a>|=-=|</div>
-			<div id="download" style="width: 100%; height: 100%;overflow: hidden;padding:20px 0 0 0;font-weight:bold;color:#FF00AA;font-size:20px;text-shadow:1px 0 1px #FFFFFF,0 0 5px #FFFFFF,0 -1px 10px #FFFFFF,-1px 0 5px #FFFFFF;letter-spacing:3px">|=-=|<a style="color:#000000;" href="http://pan.baidu.com/s/1kVFY9bp" target="_blank">百度云</a>|=-=|<a style="color:#000000;" href="http://molehzy.ys168.com" target="_blank">永硕E盘</a>|=-=|<a style="color:#000000;" href="https://www.vsqx.top/search/molehzy" target="_blank">VSQX分享</a>|=-=|<a style="color:#000000;" href="http://molehzy.xicp.net/" target="_blank">私人云(测试)</a>|=-=|</div>
-			<div id="me" style="width: 100%; height: 100%;overflow: hidden;padding:20px 0 0 0;font-weight:bold;color:#FF00AA;font-size:20px;text-shadow:1px 0 1px #FFFFFF,0 0 5px #FFFFFF,0 -1px 10px #FFFFFF,-1px 0 5px #FFFFFF;letter-spacing:3px">|=-=|<a style="color:#000000;" href="https://jq.qq.com/?_wv=1027&k=5A6aJfa" target="_blank">咸鱼交流群</a>|=-=|<a style="color:#000000;" href="https://discord.gg/JZEX7ny" target="_blank">Discord</a>|=-=|</div>
-		</div>
-		
-		<div align="center" style="padding:10px 0 5px 0">
-			<script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3FDwP7S8mOm0Y5ye",ck:"3FDwP7S8mOm0Y5ye",autoTrack:true,hashMode:true});</script>
-		</div>
 
-	</div>
+    <div class="section" id="link">
+        <div class="section-title">相关链接</div>
+        <div class="links-container">
+            <a href="https://space.bilibili.com/5407039/" target="_blank">BILIBILI</a>
+            <a href="http://www.missevan.com/325445/" target="_blank">MISSEVAN</a>
+            <a href="http://5sing.kugou.com/54727720/default.html" target="_blank">5Sing</a>
+            <a href="https://github.com/molehzy/molehzy.github.io" target="_blank">GITHUB</a>
+        </div>
+    </div>
+
+    <div class="section" id="download">
+        <div class="section-title">资源存放</div>
+        <div class="links-container">
+            <a href="http://pan.baidu.com/s/1kVFY9bp" target="_blank">百度云</a>
+            <a href="http://molehzy.ys168.com" target="_blank">永硕E盘</a>
+            <a href="https://www.vsqx.top/search/molehzy" target="_blank">VSQX分享</a>
+            <a href="http://molehzy.xicp.net/" target="_blank">私人云(测试)</a>
+        </div>
+    </div>
+
+    <div class="section" id="me">
+        <div class="section-title">联系我</div>
+        <div class="links-container">
+            <a href="https://jq.qq.com/?_wv=1027&k=5A6aJfa" target="_blank">咸鱼交流群</a>
+            <a href="https://discord.gg/JZEX7ny" target="_blank">Discord</a>
+        </div>
+    </div>
+
+    <a class="bg-source" href="https://www.pixiv.net/artworks/115240782" target="_blank">
+        背景图来自: Pixiv@115240782
+    </a>
+
+    <div  class="analytics-container">
+        <script>
+            !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3FDwP7S8mOm0Y5ye",ck:"3FDwP7S8mOm0Y5ye",autoTrack:true,hashMode:true});
+        </script>
+    </div>
+
 </body>
 
 </html>
